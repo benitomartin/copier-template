@@ -92,3 +92,5 @@ Read the full article: [Template Once, Update Everywhere: Build Evolving Python 
 ## Note
 
 If you clone this repository, make sure to delete the `README.md` file and keep the `README.md.jinja` file. The `README.md` is only for this Copier template repository itself, while `README.md.jinja` is the template that will generate the README for new projects.
+
+Also make sure you remove the `static` folder as it contains the image for the `README.md`
