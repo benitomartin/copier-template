@@ -31,7 +31,7 @@ uv tool install copier
 Generate a new project:
 
 ```bash
-copier copy ~/path/to/copier-template-base ~/path/to/new-repo --trust
+copier copy ~/path/to/copier-template ~/path/to/new-repo --trust
 ```
 
 Answer the prompts and your project is ready!
