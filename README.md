@@ -1,6 +1,14 @@
-# Copier Python Template
+# Copier Template
 
-A modern Python project template using Copier, uv, and best-practice tooling.
+
+<div align="center">
+    <img width="250" height="auto" alt="copier logo" src="https://github.com/user-attachments/assets/c49257c8-ece7-4660-a83d-20158e959964" />
+</div>
+
+<p align="center">
+  <em>A modern Python project template using Copier, uv, and best-practice tooling.</em>
+</p>
+
 
 https://github.com/user-attachments/assets/a35451b9-ea55-4c09-8407-2cd6505b3168
 
@@ -87,10 +95,8 @@ The template asks for:
 
 ## Learn More
 
-Read the full article: [Template Once, Update Everywhere: Build Evolving Python Templates with Copier](https://aiechoes.substack.com/p/template-once-update-everywhere-build)
+Read the full article: [Template Once, Update Everywhere: Build Evolving Python Templates with Copier](https://aiechoes.substack.com/p/template-once-update-everywhere-build-ab3)
 
 ## Note
 
 If you clone this repository, make sure to delete the `README.md` file and keep the `README.md.jinja` file. The `README.md` is only for this Copier template repository itself, while `README.md.jinja` is the template that will generate the README for new projects.
-
-Also make sure you remove the `static` folder as it contains the image for the `README.md`
