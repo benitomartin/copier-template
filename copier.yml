@@ -23,7 +23,7 @@ _tasks:
 # Questions to ask when generating a new project
 project_name:
   type: str
-  default: "my-basic-app"
+  default: "awesome-ai-app"
   help: "The name of your new project"
 module_name:
   type: str
