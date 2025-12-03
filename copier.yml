@@ -1,0 +1,45 @@
+# copier.yml
+_templates_suffix: .jinja
+
+_src_path: "{{ _copier_conf.src_path }}"
+
+_tasks:
+  - "cp env.example .env"
+  - "rm -rf env.example"
+  - "git init"
+  - "git add ."
+  - "git commit -m 'Initial commit'"
+  - "gh repo create {{ project_name }} --source=. --private --push --remote=origin"
+  - "uv sync --all-groups"
+  - "uv add --group test pytest"
+  - "uv add --group lint ruff mypy"
+  - "uv add --group dev prek"
+  - "make tests || true"
+  - "git add ."
+  - "git commit -m 'Setup development dependencies and tooling'"
+  - "git push"
+  - "echo 'Project {{ project_name }} generated successfully!'"
+
+# Questions to ask when generating a new project
+project_name:
+  type: str
+  default: "my-basic-app"
+  help: "The name of your new project"
+module_name:
+  type: str
+  default: "{{ project_name | lower | replace('-', '_') }}"
+  help: "Python module name for your application (used in src/...)"
+description:
+  type: str
+  default: "A basic project generated from the template"
+  help: "Short description of your project"
+version:
+  type: str
+  default: "0.1.0"
+  help: "Initial version of the project"
+python_version:
+  type: str
+  help: "Python version used in Dockerfile and virtual environment"
+  choices: ["3.14", "3.13", "3.12"]
+  default: "3.13"
+
