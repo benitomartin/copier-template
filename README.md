@@ -2,7 +2,7 @@
 
 A modern Python project template using Copier, uv, and best-practice tooling.
 
-![image](static/image.png)
+https://github.com/user-attachments/assets/a35451b9-ea55-4c09-8407-2cd6505b3168
 
 ## Features
 
